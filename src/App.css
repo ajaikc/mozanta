@@ -1,0 +1,21 @@
+.list {
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
+}
+.navbar{
+  text-align: center;
+  color:gray;
+}
+.form-controll{
+  border-radius:3.25rem
+}
+.submit-form {
+  max-width: 300px;
+  margin: auto;
+}
+
+.edit-form {
+  max-width: 300px;
+  margin: auto;
+}
