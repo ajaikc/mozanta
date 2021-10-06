@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import TutorialDataService from "../services/tutorial.service";
 import { Link } from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faTrash,faEdit} from "@fortawesome/free-solid-svg-icons"
+import { faTrash,faEdit,faPlusCircle} from "@fortawesome/free-solid-svg-icons"
 export default class TutorialsList extends Component {
   constructor(props) {
     super(props);
@@ -120,8 +120,12 @@ export default class TutorialsList extends Component {
           </ul>
 
             <FontAwesomeIcon icon={faTrash} onClick={this.removeAllTutorials}></FontAwesomeIcon> Remove All
-         
-        </div>
+            <br/>  <br/>
+            <div className="new">
+   <a  href="/#/add"><h6> new task</h6></a>
+   </div>
+            
+             </div>
         <div className="col-md-6 ">
           {currentTutorial ? (
             <div>
