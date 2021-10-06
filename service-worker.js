@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mozanta/precache-manifest.a79dff33dcae3ce05eb5292498d203c7.js"
+  "/mozanta/precache-manifest.59d44dca3cd516a7c7ce391182581e5d.js"
 );
 
 self.addEventListener('message', (event) => {

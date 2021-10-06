@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mozanta/static/css/main.c28e75e4.chunk.css",
-    "main.js": "/mozanta/static/js/main.ff08b052.chunk.js",
-    "main.js.map": "/mozanta/static/js/main.ff08b052.chunk.js.map",
+    "main.js": "/mozanta/static/js/main.b699d45f.chunk.js",
+    "main.js.map": "/mozanta/static/js/main.b699d45f.chunk.js.map",
     "runtime-main.js": "/mozanta/static/js/runtime-main.e8914da3.js",
     "runtime-main.js.map": "/mozanta/static/js/runtime-main.e8914da3.js.map",
     "static/css/2.02ecd3ae.chunk.css": "/mozanta/static/css/2.02ecd3ae.chunk.css",
     "static/js/2.2bdb295c.chunk.js": "/mozanta/static/js/2.2bdb295c.chunk.js",
     "static/js/2.2bdb295c.chunk.js.map": "/mozanta/static/js/2.2bdb295c.chunk.js.map",
     "index.html": "/mozanta/index.html",
-    "precache-manifest.a79dff33dcae3ce05eb5292498d203c7.js": "/mozanta/precache-manifest.a79dff33dcae3ce05eb5292498d203c7.js",
+    "precache-manifest.59d44dca3cd516a7c7ce391182581e5d.js": "/mozanta/precache-manifest.59d44dca3cd516a7c7ce391182581e5d.js",
     "service-worker.js": "/mozanta/service-worker.js",
     "static/css/2.02ecd3ae.chunk.css.map": "/mozanta/static/css/2.02ecd3ae.chunk.css.map",
     "static/css/main.c28e75e4.chunk.css.map": "/mozanta/static/css/main.c28e75e4.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.02ecd3ae.chunk.css",
     "static/js/2.2bdb295c.chunk.js",
     "static/css/main.c28e75e4.chunk.css",
-    "static/js/main.ff08b052.chunk.js"
+    "static/js/main.b699d45f.chunk.js"
   ]
 }
