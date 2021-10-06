@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import TutorialDataService from "../services/tutorial.service";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faPlus, faPlusCircle} from "@fortawesome/free-solid-svg-icons"
+import Tutorial from "./tutorial.component";
+import TutorialsList from "./tutorials-list.component";
 
 export default class AddTutorial extends Component {
   constructor(props) {
@@ -70,43 +74,34 @@ export default class AddTutorial extends Component {
       <div className="submit-form">
         {this.state.submitted ? (
           <div>
-            <h4>You submitted successfully!</h4>
-            <button className="btn btn-success" onClick={this.newTutorial}>
-              Add
-            </button>
+            <h4>You Added successfully!</h4>
+            <h5>if more data click Add button</h5>
+            <FontAwesomeIcon icon={faPlusCircle} size="2rem" onClick={this.newTutorial}></FontAwesomeIcon>
+        
           </div>
         ) : (
           <div>
             <div className="form-group">
-              <label htmlFor="title">Title</label>
+            <h4>Tasks</h4>
+              <div className="taskInput">
+            
+               
+              <FontAwesomeIcon icon={faPlus}  onClick={this.saveTutorial} ></FontAwesomeIcon>
+            
               <input
                 type="text"
-                className="form-control"
+                className="inputField"
                 id="title"
                 required
                 value={this.state.title}
                 onChange={this.onChangeTitle}
                 name="title"
+                placeholder="Add a Task"
               />
             </div>
-
-            <div className="form-group">
-              <label htmlFor="description">Description</label>
-              <input
-                type="text"
-                className="form-control"
-                id="description"
-                required
-                value={this.state.description}
-                onChange={this.onChangeDescription}
-                name="description"
-              />
             </div>
-            //<i class="fa fa-plus" aria-hidden="true"></i>
-
-            <button onClick={this.saveTutorial} className="btn btn-success">
-              Submit
-            </button>
+            
+              <TutorialsList/>
           </div>
         )}
       </div>

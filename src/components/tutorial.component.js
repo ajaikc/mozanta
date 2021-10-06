@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import TutorialDataService from "../services/tutorial.service";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import { faPlus, faPlusCircle, faTrash} from "@fortawesome/free-solid-svg-icons"
+
 
 export default class Tutorial extends Component {
   constructor(props) {
@@ -106,7 +109,7 @@ export default class Tutorial extends Component {
     TutorialDataService.delete(this.state.currentTutorial.id)
       .then(response => {
         console.log(response.data);
-        this.props.history.push('/tutorials')
+        this.props.history.push('/add')
       })
       .catch(e => {
         console.log(e);
@@ -120,10 +123,11 @@ export default class Tutorial extends Component {
       <div>
         {currentTutorial ? (
           <div className="edit-form">
-            <h4>Tutorial</h4>
+       
+          <h4>Tasks</h4> 
             <form>
               <div className="form-group">
-                <label htmlFor="title">Title</label>
+                <label htmlFor="title">Task name</label>
                 <input
                   type="text"
                   className="form-control"
@@ -132,22 +136,13 @@ export default class Tutorial extends Component {
                   onChange={this.onChangeTitle}
                 />
               </div>
-              <div className="form-group">
-                <label htmlFor="description">Description</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="description"
-                  value={currentTutorial.description}
-                  onChange={this.onChangeDescription}
-                />
-              </div>
+             
 
               <div className="form-group">
                 <label>
                   <strong>Status:</strong>
                 </label>
-                {currentTutorial.published ? "Published" : "Pending"}
+                {currentTutorial.published ? "Completed" : "Created"}
               </div>
             </form>
 
@@ -159,12 +154,17 @@ export default class Tutorial extends Component {
                 UnPublish
               </button>
             ) : (
+              
+              
               <button
                 className="badge badge-primary mr-2"
                 onClick={() => this.updatePublished(true)}
               >
                 Publish
               </button>
+
+              
+
             )}
 
             <button
@@ -186,10 +186,15 @@ export default class Tutorial extends Component {
         ) : (
           <div>
             <br />
-            <p>Please click on a Tutorial...</p>
+            <p>haiiii</p>
           </div>
+          
         )}
+        <div className="new">
+   <a  href="/#/add"><FontAwesomeIcon icon={faPlusCircle}></FontAwesomeIcon></a><h5>Add a new task</h5>
+   </div>
       </div>
+      
     );
   }
 }
